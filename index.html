@@ -1,54 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PRECIOUS LODGE</title>
     <style>
-body{
-text-align: center;
-
-}
+        body {
+            background: url('i.jpg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+        form {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: left;
+        }
+        h1 {
+            color: #FFD700;
+        }
+        input[type="text"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 10px 0;
+            border: none;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="radio"] {
+            margin: 0 10px 0 0;
+        }
+        input[type="submit"] {
+            background-color: #FFD700;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #FFC107;
+        }
+        marquee {
+            margin-bottom: 20px;
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            form {
+                width: 100%;
+            }
+        }
     </style>
 </head>
-<body background="i.jpg">
+<body>
     <marquee><h1>PRECIOUS LODGE</h1></marquee>
     <form>
-      
-
-FILL YOUR DETAILS<br><br>
-<input type="text" placeholder="First name"><br><br>
-<input type="text" placeholder="last name"><br><br>
-<input type="text" placeholder="phone number"><br><br>
-<input type="text" placeholder="Email"><br><br>
-<input type="text" placeholder="number of days ">
-<select>
-<option>1</option>
-<option>2</option>
-<option>3</option>
-<option>4</option>
-<option>5</option>
-<option>6</option>
-</select><br><br>
-<input type="text" placeholder="type of room">
-<select>
-<option>VVIP room</option>
-<option>VIP room</option>
-<option>Master room</option>
-</select><br><br>
-GENDER
-<input type="radio" name="sex" value="Female">Female
-<input type="radio" name="sex" value="male">male
-<br><br>
-<input type="submit" value="Register">
-
-
-
-
-
-
-
-
+        <p>FILL YOUR DETAILS</p>
+        <input type="text" placeholder="First name"><br>
+        <input type="text" placeholder="Last name"><br>
+        <input type="text" placeholder="Phone number"><br>
+        <input type="text" placeholder="Email"><br>
+        <input type="text" placeholder="Number of days">
+        <select>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+        </select><br>
+        <input type="text" placeholder="Type of room">
+        <select>
+            <option>VVIP room</option>
+            <option>VIP room</option>
+            <option>Master room</option>
+        </select><br>
+        <p>GENDER</p>
+        <input type="radio" name="sex" value="Female"> Female
+        <input type="radio" name="sex" value="Male"> Male<br><br>
+        <input type="submit" value="Register">
     </form>
-    
-
 </body>
 </html>
